@@ -20,7 +20,7 @@ def check_url_with_virustotal(url):
     Encodes the URL as required, calls the API, and returns True 
     only if the malicious count is greater than zero.
     """
-    vt_api_key = "YOUR_VIRUSTOTAL_API_KEY"  # Replace with your API key
+    vt_api_key = "0d47d2a03a43518344efd52726514f3b9dacc3e190742ee52eae89e6494dc416"  # Replace with your API key
     url_id = encode_url(url)
     headers = {"x-apikey": vt_api_key}
     vt_url = f"https://www.virustotal.com/api/v3/urls/{url_id}"
